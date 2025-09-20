@@ -14,6 +14,10 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+    const scrollToId = (id) => {
+  const element = document.getElementById(id);
+  element?.scrollIntoView({ behavior: "smooth" });
+};
   // common nav link styles
   const navLink =
     "relative text-gray-600 font-medium transition-colors duration-200 hover:text-[#ff712c] " +
@@ -41,22 +45,22 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex text-[18px] items-center space-x-6">
-          <a href="#" className={navLink}>
+          <a onClick={() => scrollToId("about")} href="#" className={navLink}>
             About
           </a>
-          <a href="#" className={navLink}>
+          <a onClick={() => scrollToId("services")} href="#" className={navLink}>
             Services
           </a>
-          <a href="#" className={navLink}>
+          <a onClick={() => scrollToId("process")} href="#" className={navLink}>
             Process
           </a>
-          <a href="#" className={navLink}>
+          <a onClick={() => scrollToId("portfolio")} href="#" className={navLink}>
             Portfolio
           </a>
-          <a href="#" className={navLink}>
+          <a onClick={() => scrollToId("testimonials")} href="#" className={navLink}>
             Testimonials
           </a>
-          <a href="#" className={navLink}>
+          <a onClick={() => scrollToId("contact-section")} href="#" className={navLink}>
             Contact
           </a>
         </nav>
@@ -82,32 +86,32 @@ const Header = () => {
         ${isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
       >
         <ul className="flex flex-col items-center py-4 space-y-4 bg-white/90">
-          <li>
+          <li onClick={() => scrollToId("about")}>
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors font-medium text-lg">
               About
             </a>
           </li>
-          <li>
+          <li onClick={() => scrollToId("services")}>
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors font-medium text-lg">
               Services
             </a>
           </li>
-          <li>
+          <li onClick={() => scrollToId("process")}>
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors font-medium text-lg">
               Process
             </a>
           </li>
-          <li>
+          <li onClick={() => scrollToId("portfolio")}>
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors font-medium text-lg">
               Portfolio
             </a>
           </li>
-          <li>
+          <li onClick={() => scrollToId("testimonials")}>
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors font-medium text-lg">
               Testimonials
             </a>
           </li>
-          <li>
+          <li onClick={() => scrollToId("contact-section")}>
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors font-medium text-lg">
               Contact
             </a>

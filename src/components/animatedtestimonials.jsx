@@ -49,7 +49,7 @@ const AnimatedTestimonials = () => {
   };
 
   return (
-    <div className="w-full bg-gray-50 md:py-20 py-10">
+    <div id="testimonials" className="w-full bg-gray-50 md:py-20 py-10">
       <div className="max-w-[1170px] mx-auto px-8 xl:px-0 ">
 
         <div className="text-center mb-12 ">
@@ -112,7 +112,7 @@ const AnimatedTestimonials = () => {
             <div className="flex gap-4 mt-8 md:mt-4">
               <button
                 onClick={handlePrev}
-                className="w-8 h-8 rounded-full bg-gradient-to-r from-black via-[#ff712c] to-black flex items-center justify-center  transition"
+                className="cursor-pointer w-8 h-8 rounded-full bg-gradient-to-r from-black via-[#ff712c] to-black flex items-center justify-center  transition"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +124,7 @@ const AnimatedTestimonials = () => {
               </button>
               <button
                 onClick={handleNext}
-                className="w-8 h-8 rounded-full bg-gradient-to-r from-black via-[#ff712c] to-black flex items-center justify-center  transition"
+                className="cursor-pointer w-8 h-8 rounded-full bg-gradient-to-r from-black via-[#ff712c] to-black flex items-center justify-center  transition"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

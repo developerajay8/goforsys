@@ -23,7 +23,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="bg-gray-50  md:py-20 py-10 ">
+    <div id="contact-section" className="bg-gray-50  md:py-20 py-10 ">
       <div className="max-w-[1170px] mx-auto xl:px-0 px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Side - Contact Details */}
@@ -44,7 +44,7 @@ export default function ContactSection() {
               
               <div className="flex items-center space-x-4">
                 <div className="bg-gradient-to-r from-black via-[#ff712c] to-black p-3 rounded-full">
-                  <Phone className="w-6 h-6 text-black" />
+                  <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-black text-lg">Phone</h3>
@@ -54,7 +54,7 @@ export default function ContactSection() {
 
               <div className="flex items-center space-x-4">
                 <div className="bg-gradient-to-r from-black via-[#ff712c] to-black p-3 rounded-full">
-                  <Mail className="w-6 h-6 text-black" />
+                  <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-black text-lg">Email</h3>
@@ -103,7 +103,7 @@ export default function ContactSection() {
 
               <button
                 onClick={handleSubmit}
-                className="bg-gradient-to-r from-black via-[#ff712c] to-black text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="cursor-pointer bg-gradient-to-r from-black via-[#ff712c] to-black text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 SEND MESSAGE
               </button>

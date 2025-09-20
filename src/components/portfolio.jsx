@@ -56,7 +56,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <div className="w-full md:py-20 py-10 px-6 xl:px-0 bg-gray-50">
+        <div id="portfolio" className="w-full md:py-20 py-10 px-6 xl:px-0 bg-gray-50">
             <div className="max-w-[1170px] mx-auto px-6 xl:px-0">
 
                 <div className="text-center mb-12 ">

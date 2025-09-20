@@ -2,8 +2,12 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const ProcessTimeline = () => {
+  const scrollToId = (id) => {
+  const element = document.getElementById(id);
+  element?.scrollIntoView({ behavior: "smooth" });
+};
   return (
-    <div className="min-h-screen bg-white md:py-20 py-10 px-4">
+    <div id='process' className="min-h-screen bg-white md:py-20 py-10 px-4">
       <div className="max-w-[1170px] mx-auto xl:px-0 px-6">
         {/* Header Section */}
         <div className="text-center mb-12 ">
@@ -138,7 +142,7 @@ const ProcessTimeline = () => {
 
         {/* Bottom CTA Section */}
         <div className="text-center mt-16">
-          <button className="uppercase bg-gradient-to-r from-black via-[#ff712c] to-black
+          <button onClick={() => scrollToId("contact-section")} className="cursor-pointer uppercase bg-gradient-to-r from-black via-[#ff712c] to-black
     text-white sm:text-lg text-[16px] font-semibold rounded-full 
     shadow-lg hover:scale-105 hover:shadow-xl 
     transition-all duration-300 ease-in-out   sm:py-4 py-3 sm:px-8 px-6  transform ">

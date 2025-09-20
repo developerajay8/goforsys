@@ -29,6 +29,11 @@ export default function HeroSection() {
         return () => clearTimeout(timer);
     }, [displayText, isDeleting, currentWordIndex]);
 
+    const scrollToId = (id) => {
+  const element = document.getElementById(id);
+  element?.scrollIntoView({ behavior: "smooth" });
+};
+
     return (
         <section
             style={{
@@ -55,7 +60,7 @@ export default function HeroSection() {
 
                 {/* CTA Button */}
                 <div className="mt-8 flex items-center gap-4">
-                    <button className="flex items-center px-6 py-3 
+                    <button onClick={() => scrollToId("contact-section")} className="flex cursor-pointer items-center px-6 py-3 
     bg-gradient-to-r from-black via-[#ff712c] to-black
     text-white text-lg font-semibold rounded-full 
     shadow-lg hover:scale-105 hover:shadow-xl 

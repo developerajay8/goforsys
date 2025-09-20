@@ -125,7 +125,7 @@ const Servicessections = () => {
         }
       `}</style>
 
-            <div className="py-10 lg:py-20 bg-gray-50">
+            <div id="services" className="py-10 lg:py-20 bg-gray-50">
                 <div className="max-w-[1170px] mx-auto text-center px-6 lg:px-8">
                     <h2 className="text-3xl uppercase lg:text-4xl font-extrabold text-gray-900 relative inline-block">
                         Our Services
