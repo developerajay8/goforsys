@@ -1,5 +1,5 @@
 {
-  "name": "try",
+  "name": "goforsys",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -29,5 +29,17 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "vite": "^7.1.2"
-  }
+  },
+  "description": "goforsys",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "goforsys"
+  },
+  "keywords": [
+    "author",
+    "name"
+  ],
+  "author": "ajay",
+  "license": "ISC"
 }
